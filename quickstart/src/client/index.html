@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="content/bootstrap.css"/>
     <link rel="stylesheet" href="content/styles.css"/>
     <link rel="stylesheet" href="content/animations.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap-vertical-tabs/bootstrap.vertical-tabs.css"/>
 </head>
 <body class="container">
     <header class="navbar navbar-inverse navbar-fixed-top ani-nav" role="banner">
@@ -13,6 +14,10 @@
             <a href="#" class="navbar-brand">Angular Jump-Start Demos</a>
         </div>
     </header>
+
+    <div ng-controller="formCtrl">
+        <form sf-schema="schema" sf-form="form" sf-model="model"></form>
+    </div>
 
     <div class="example-animate-container">
         <div class="shuffle-animation">
@@ -34,11 +39,16 @@
     <script src="scripts/angular.js"></script>
     <script src="scripts/angular-route.js"></script>
     <script src="scripts/angular-animate.js"></script>
-
+    <script type="text/javascript" src="node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="node_modules/tv4/tv4.js"></script>
+    <script type="text/javascript" src="node_modules/objectpath/lib/ObjectPath.js"></script>
+    <script type="text/javascript" src="node_modules/angular-schema-form/dist/schema-form.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular-schema-form/dist/bootstrap-decorator.min.js"></script>
     <script src="app/app.module.js"></script>
     <script src="app/people/people2.controller.js"></script>
     <script src="app/people/people.service.js"></script>
     <script src="app/avengers/avengers.controller.js"></script>
     <script src="app/avengers/avengers.service.js"></script>
+    <script src="app/formCtrl.js"></script>
 </body>
 </html>

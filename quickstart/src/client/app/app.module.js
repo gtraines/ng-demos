@@ -2,7 +2,7 @@
         'use strict';
 
         angular
-            .module('app', ['ngAnimate', 'ngRoute'])
+            .module('app', ['ngAnimate', 'ngSanitize', 'ngRoute', 'schemaForm'])
             .config(routeConfig);
         
         routeConfig.$inject = ['$routeProvider'];
